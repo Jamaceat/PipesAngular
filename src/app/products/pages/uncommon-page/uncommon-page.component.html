@@ -1,9 +1,20 @@
-<div class="col-12 md:col-6">
-  <p-fieldset legend="JSON Pipe" [toggleable]="true">
-    <p>
-      Saludos {{ name }}, es un placer
-      {{ gender | i18nSelect : invitationMap }} a nuestro evento.
-    </p>
-    <p-button (onClick)="changeClient()" label="Cambiar persona"></p-button>
-  </p-fieldset>
+<div class="grid">
+  <div class="col-12 md:col-6">
+    <p-fieldset legend="JSON i18nSelect" [toggleable]="true">
+      <p>
+        Saludos {{ name }}, es un placer
+        {{ gender | i18nSelect : invitationMap }} a nuestro evento.
+      </p>
+      <p-button (onClick)="changeClient()" label="Cambiar persona"></p-button>
+    </p-fieldset>
+  </div>
+  <div class="col-12 md:col-6">
+    <p-fieldset legend="JSON i18nPlural" [toggleable]="true">
+      <p>
+        Actualmente
+        {{ clients.length | i18nPlural : clientsMap }}
+      </p>
+      <p-button (onClick)="deleteClient()" label="eliminar persona"></p-button>
+    </p-fieldset>
+  </div>
 </div>
