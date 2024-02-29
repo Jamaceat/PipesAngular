@@ -15,8 +15,16 @@ export class MenuComponent implements OnInit {
         label: 'Pipes de angular',
         icon: 'pi pi-fw pi-download',
         items: [
-          { label: 'Numeros', icon: 'pi pi-dollar' },
-          { label: 'No comunes', icon: 'pi pi-globe' },
+          {
+            label: 'Numeros',
+            icon: 'pi pi-dollar',
+            routerLink: '/numbers',
+          },
+          {
+            label: 'No comunes',
+            icon: 'pi pi-globe',
+            routerLink: '/uncommon',
+          },
         ],
       },
     ];
