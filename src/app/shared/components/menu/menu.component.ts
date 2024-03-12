@@ -20,11 +20,20 @@ export class MenuComponent implements OnInit {
             icon: 'pi pi-dollar',
             routerLink: '/numbers',
           },
+          {},
           {
             label: 'No comunes',
             icon: 'pi pi-globe',
             routerLink: '/uncommon',
           },
+        ],
+      },
+      {
+        label: 'Pipes personalizados',
+        icon: 'pi pi-cog',
+        routerLink: '/order',
+        items: [
+          { label: 'Custom Pipes', icon: 'pi pi-cog', routerLink: '/order' },
         ],
       },
     ];
